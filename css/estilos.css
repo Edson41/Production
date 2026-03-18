@@ -1,0 +1,844 @@
+/* ========================================
+   1. CONFIGURACIÓN GLOBAL Y VARIABLES
+   ======================================== */
+
+@font-face {
+    font-family: 'Aptos';
+    src: local('Aptos'), local('Aptos Display');
+}
+
+:root {
+    /* Colores Principales */
+    --azul-tecnm: #1B396A;
+    --naranja-convocatoria: #d17a1b;
+
+    /* Colores Secundarios */
+    --gris-fondo: #f4f7f6;
+    --blanco: #ffffff;
+    --gris-claro: #F7F7F7;
+    --gris-borde: #dee2e6;
+
+    /* Sombras */
+    --sombra-suave: 0 2px 10px rgba(0,0,0,0.1);
+    --sombra-media: 0 4px 12px rgba(0,0,0,0.08);
+    --sombra-fuerte: 0 10px 30px rgba(0,0,0,0.08);
+
+    /* Transiciones */
+    --transicion: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--gris-fondo);
+    font-family: 'Aptos', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+
+/* ========================================
+   2. HEADER - TOP HEADER
+   ======================================== */
+
+.top-header {
+    background-color: var(--gris-claro);
+    border-bottom: 1px solid var(--gris-borde);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--sombra-suave);
+}
+
+.top-header .container-fluid {
+    max-width: 1600px;
+}
+
+/* Contenedor Principal - Una sola línea */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+
+/* ========================================
+   3. MARCA Y LOGOS
+   ======================================== */
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--azul-tecnm);
+    flex-shrink: 0;
+    min-width: 0;
+}
+
+.logo-principal {
+    height: 100px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    color: var(--azul-tecnm);
+    line-height: 1;
+    margin: 0;
+    min-width: 0;
+}
+
+.brand-text h2,
+.brand-text h1,
+.brand-text h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.brand-text .title-top {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.brand-text .title-mid {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.brand-text .title-bottom {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.logo-secundario {
+    height: auto;
+    width: 280px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+
+/* ========================================
+   4. MENÚ CENTRAL E INDICADOR
+   ======================================== */
+
+.menu-central-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 80px;
+}
+
+/* Enlace de Navegación */
+.nav-link-inline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #212529;
+    cursor: pointer;
+    z-index: 2;
+    border: none;
+    background: none;
+    padding: 15px 12px;
+
+    min-width: auto;
+    min-height: auto;
+    position: relative;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+    font-family: inherit;
+    white-space: nowrap;
+}
+
+.nav-link-inline:hover {
+    background-color: rgba(0,0,0,0.02);
+    border-radius: 4px;
+}
+
+.nav-link-inline:focus {
+    outline: 2px solid var(--naranja-convocatoria);
+    outline-offset: 2px;
+}
+
+/* Iconos y Texto en Navegación */
+.nav-link-inline i {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+    pointer-events: none;
+}
+
+.nav-link-inline span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    pointer-events: none;
+    line-height: 1.1;
+}
+
+/* Indicador de Selección Animado */
+.nav-indicator {
+    height: 4px;
+    background-color: var(--azul-tecnm);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all var(--transicion);
+    border-radius: 2px;
+    z-index: 1;
+    width: 0;
+}
+
+
+/* ========================================
+   5. SELECTOR DE IDIOMA (HTML Semántico)
+   ======================================== */
+
+.language-selector {
+    display: flex;
+    gap: 8px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.language-selector input[type="radio"] {
+    display: none;
+}
+
+.language-selector label.flag-btn {
+    padding: 0;
+    margin: 0;
+    height: 32px;
+    width: 48px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s;
+}
+
+.language-selector label.flag-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.language-selector input[type="radio"]:checked + label {
+    border: 2px solid var(--naranja-convocatoria);
+    box-shadow: 0 0 0 2px rgba(209, 122, 27, 0.2);
+}
+
+.language-selector label.flag-btn:hover {
+    opacity: 0.8;
+    border-color: var(--naranja-convocatoria);
+}
+
+.language-selector input[type="radio"]:focus + label {
+    outline: 2px solid var(--naranja-convocatoria);
+    outline-offset: 2px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+/* ========================================
+   6. HERO / PORTADA
+   ======================================== */
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 5px solid #ddd;
+}
+
+.hero-img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Título Sobre Portada */
+.hero-title-overlay {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-title-overlay h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+
+/* Botón Flotante Naranja */
+.btn-flotante-naranja {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background-color: var(--naranja-convocatoria);
+    color: var(--blanco);
+    padding: 12px 35px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.4rem;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.4);
+    z-index: 3;
+    transition: transform 0.2s;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-flotante-naranja:hover {
+    transform: scale(1.05);
+    color: var(--blanco);
+}
+
+.btn-flotante-naranja:focus {
+    outline: 2px solid var(--blanco);
+    outline-offset: 2px;
+}
+
+/* Botón Facebook Sobre Portada */
+.btn-facebook-sobre-portada {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 150px;
+    z-index: 15;
+    transition: transform var(--transicion);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+}
+
+.btn-facebook-sobre-portada:focus {
+    outline: 2px solid var(--naranja-convocatoria);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.btn-facebook-sobre-portada img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(4px 8px 15px rgba(0,0,0,0.5));
+    display: block;
+}
+
+.btn-facebook-sobre-portada:hover img {
+    filter: drop-shadow(4px 8px 15px rgba(0,0,0,0.6)) brightness(1.1);
+}
+
+
+/* ========================================
+   7. TARJETAS DE ACCESO RÁPIDO
+   ======================================== */
+
+.card-replica {
+    background-color: var(--blanco);
+    border-radius: 12px;
+    box-shadow: var(--sombra-media);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.card-replica:hover {
+    transform: translateY(-5px);
+}
+
+.icon-container-replica {
+    flex: 0 0 100px;
+    width: 100px;
+    height: auto;
+}
+
+.content-container-replica {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.title-replica {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.subtitle-replica {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 800;
+    color: #133665;
+}
+
+
+/* ========================================
+   8. MENÚ LATERAL
+   ======================================== */
+
+.contenedor-menu-puro {
+    background-color: var(--blanco);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.enlace-puro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #444;
+    transition: 0.2s;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.enlace-puro:focus {
+    outline: 2px inset var(--naranja-convocatoria);
+}
+
+.enlace-puro:hover {
+    background-color: rgba(27, 57, 106, 0.02);
+}
+
+.enlace-puro.activo {
+    background-color: #e7f0ff !important;
+    color: var(--azul-tecnm) !important;
+    font-weight: bold;
+    border-left: 6px solid var(--azul-tecnm) !important;
+    padding-left: 14px;
+}
+
+
+/* ========================================
+   9. PANEL CENTRAL DINÁMICO
+   ======================================== */
+
+.panel-dinamico {
+    min-height: 500px;
+    background: var(--blanco);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: var(--sombra-fuerte);
+}
+
+.panel-dinamico h2,
+.panel-dinamico h3 {
+    margin-top: 0;
+}
+
+#mensaje-vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+#mensaje-vacio i {
+    font-size: 4rem;
+    color: #ddd;
+}
+
+#mensaje-vacio h2 {
+    color: #999;
+    margin: 15px 0 10px;
+}
+
+#mensaje-vacio p {
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   10. CONTACTO - MARCO INCLINADO
+   ======================================== */
+
+.foto-marco {
+    width: 130px;
+    height: 130px;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0% 15%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.img-contacto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-contacto-titulo {
+    font-weight: 800;
+    color: var(--azul-tecnm);
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+.texto-contacto-nombre {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+
+/* ========================================
+   11. FOOTER
+   ======================================== */
+
+.footer-replica {
+    background: linear-gradient(to right, #1a3668 0%, #3b5998 40%, #6b8bb2 100%);
+    color: var(--blanco);
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-info-text {
+    flex: 1;
+    min-width: 300px;
+    line-height: 1.6;
+}
+
+.footer-info-text h2,
+.footer-info-text h3 {
+    margin: 0 0 8px 0;
+}
+
+.footer-info-text p {
+    margin: 0 0 8px 0;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-linea-bold {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-linea-bold a,
+.footer-info-text a {
+    color: var(--blanco);
+    text-decoration: underline;
+    transition: opacity 0.2s;
+}
+
+.footer-linea-bold a:hover,
+.footer-info-text a:hover {
+    opacity: 0.8;
+}
+
+.footer-linea-bold a:focus,
+.footer-info-text a:focus {
+    outline: 2px solid var(--blanco);
+    outline-offset: 2px;
+}
+
+.footer-map-container {
+    flex: 0 0 350px;
+    height: 200px;
+}
+
+.footer-map-container iframe {
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* ========================================
+   12. ANIMACIONES
+   ======================================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out;
+}
+
+.animate-slide-down {
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+
+/* ========================================
+   13. MEDIA QUERIES - RESPONSIVE
+   ======================================== */
+
+/* Pantallas Extra Large - 1400px y menor */
+@media (max-width: 1400px) {
+    .menu-central-container {
+        gap: 30px;
+    }
+
+    .logo-secundario {
+        width: 240px;
+    }
+}
+
+/* Pantallas Large - 1199px y menor */
+@media (max-width: 1199px) {
+    .header-content {
+        gap: 20px;
+    }
+
+    .brand-text .title-top {
+        font-size: 14px;
+    }
+
+    .brand-text .title-mid {
+        font-size: 16px;
+    }
+
+    .brand-text .title-bottom {
+        font-size: 11px;
+    }
+
+    .menu-central-container {
+        gap: 25px;
+    }
+
+    .nav-link-inline {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+    }
+
+    .nav-link-inline span {
+        font-size: 0.85rem;
+    }
+
+    .nav-link-inline i {
+        font-size: 1.2rem;
+        margin-bottom: 3px;
+    }
+
+    .logo-secundario {
+        width: 200px;
+    }
+}
+
+/* Tablets - 768px y menor */
+@media (max-width: 768px) {
+    .top-header {
+        padding: 12px 0;
+    }
+
+    .header-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .brand-container {
+        gap: 10px;
+        order: 1;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .logo-principal {
+        height: 70px;
+    }
+
+    .brand-text .title-top {
+        font-size: 12px;
+    }
+
+    .brand-text .title-mid {
+        font-size: 14px;
+    }
+
+    .brand-text .title-bottom {
+        font-size: 10px;
+    }
+
+    .menu-central-container {
+        order: 2;
+        gap: 15px;
+        flex-basis: 100%;
+        justify-content: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav-link-inline {
+        padding: 10px 8px;
+        font-size: 0.8rem;
+    }
+
+    .nav-link-inline span {
+        font-size: 0.75rem;
+    }
+
+    .nav-link-inline i {
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+
+    .language-selector {
+        gap: 6px;
+    }
+
+    .language-selector label.flag-btn {
+        height: 28px;
+        width: 42px;
+    }
+
+    .logo-secundario {
+        width: 120px;
+        order: 3;
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Móviles - 480px y menor */
+@media (max-width: 480px) {
+    .top-header {
+        padding: 10px 0;
+    }
+
+    .header-content {
+        gap: 10px;
+    }
+
+    .brand-container {
+        gap: 8px;
+    }
+
+    .logo-principal {
+        height: 60px;
+    }
+
+    .brand-text .title-top {
+        font-size: 11px;
+    }
+
+    .brand-text .title-mid {
+        font-size: 12px;
+    }
+
+    .brand-text .title-bottom {
+        font-size: 9px;
+    }
+
+    .menu-central-container {
+        gap: 12px;
+    }
+
+    .nav-link-inline {
+        padding: 8px 6px;
+        font-size: 0.7rem;
+    }
+
+    .nav-link-inline span {
+        font-size: 0.65rem;
+    }
+
+    .nav-link-inline i {
+        font-size: 0.9rem;
+        margin-bottom: 1px;
+    }
+
+    .language-selector label.flag-btn {
+        height: 24px;
+        width: 36px;
+    }
+
+    .logo-secundario {
+        width: 100px;
+    }
+}
