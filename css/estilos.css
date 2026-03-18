@@ -543,7 +543,158 @@ body {
 
 
 /* ========================================
-   11. FOOTER
+   11. ÍNDICE DE CONTENIDOS
+   ======================================== */
+
+.indice-contenidos {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e8f0ff 100%);
+    border-left: 5px solid var(--naranja-convocatoria);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.indice-contenidos h3 {
+    margin: 0;
+    color: var(--azul-tecnm);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.indice-contenidos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.indice-contenidos li {
+    margin-bottom: 10px;
+}
+
+.indice-link {
+    color: var(--azul-tecnm);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all var(--transicion);
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.indice-link:before {
+    content: "▸ ";
+    margin-right: 8px;
+    color: var(--naranja-convocatoria);
+    font-weight: 800;
+}
+
+.indice-link:hover {
+    color: var(--naranja-convocatoria);
+    background-color: rgba(27, 57, 106, 0.08);
+    padding-left: 18px;
+}
+
+.indice-link:focus {
+    outline: 2px solid var(--naranja-convocatoria);
+    outline-offset: 2px;
+}
+
+
+/* ========================================
+   12. TABLA TUTORÍAS
+   ======================================== */
+
+.tabla-tutorias-container {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+.tabla-tutorias {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-borde);
+    box-shadow: var(--sombra-suave);
+}
+
+.tabla-tutorias thead {
+    background-color: var(--azul-tecnm);
+    color: var(--blanco);
+}
+
+.tabla-tutorias thead th {
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.tabla-tutorias tbody tr {
+    border-bottom: 1px solid var(--gris-borde);
+    transition: background-color 0.2s;
+}
+
+.tabla-tutorias tbody tr:hover {
+    background-color: rgba(27, 57, 106, 0.03);
+}
+
+.tabla-tutorias tbody tr:last-child {
+    border-bottom: none;
+}
+
+.celda-foto {
+    width: 200px;
+    min-height: 250px; /* Asegura espacio suficiente para foto + nombre */
+    padding: 25px;
+    text-align: center;
+    vertical-align: top;
+    background-color: #f9f9f9;
+}
+
+.foto-estudiante {
+    width: 150px;           /* Ancho fijo */
+    height: 180px;          /* ¡AQUÍ ESTÁ LA CLAVE! Un poco más alta que ancha */
+    object-fit: cover;      /* Mantiene la proporción sin estirar */
+    object-position: top;   /* PRIORIZA LA CABEZA (evita el corte de frente) */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--blanco);
+}
+
+.nombre-estudiante {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--azul-tecnm);
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.celda-info {
+    padding: 25px;
+    vertical-align: top;
+}
+
+.celda-info p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.celda-info p:last-child {
+    margin-bottom: 0;
+}
+
+.celda-info strong {
+    color: var(--azul-tecnm);
+    font-weight: 700;
+}
+
+
+/* ========================================
+   13. FOOTER
    ======================================== */
 
 .footer-replica {
@@ -620,7 +771,7 @@ body {
 
 
 /* ========================================
-   12. ANIMACIONES
+   14. ANIMACIONES
    ======================================== */
 
 @keyframes fadeIn {
@@ -655,7 +806,7 @@ body {
 
 
 /* ========================================
-   13. MEDIA QUERIES - RESPONSIVE
+   15. MEDIA QUERIES - RESPONSIVE
    ======================================== */
 
 /* Pantallas Extra Large - 1400px y menor */
@@ -707,6 +858,29 @@ body {
 
     .logo-secundario {
         width: 200px;
+    }
+
+    .tabla-tutorias {
+        font-size: 13px;
+    }
+
+    .celda-foto {
+        width: 150px;
+        padding: 15px;
+    }
+
+    .foto-estudiante {
+        width: 120px;
+        height: 120px;
+    }
+
+    .celda-info {
+        padding: 15px;
+    }
+
+    .celda-info p {
+        font-size: 13px;
+        margin-bottom: 12px;
     }
 }
 
@@ -783,6 +957,48 @@ body {
         flex-basis: 100%;
         margin-left: 0;
     }
+
+    .tabla-tutorias {
+        font-size: 12px;
+    }
+
+    .tabla-tutorias thead th {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .celda-foto {
+        width: 120px;
+        padding: 12px;
+    }
+
+    .foto-estudiante {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 8px;
+    }
+
+    .nombre-estudiante {
+        font-size: 12px;
+    }
+
+    .celda-info {
+        padding: 12px;
+    }
+
+    .celda-info p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .indice-contenidos {
+        padding: 15px;
+    }
+
+    .indice-link {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
 }
 
 /* Móviles - 480px y menor */
@@ -840,5 +1056,55 @@ body {
 
     .logo-secundario {
         width: 100px;
+    }
+
+    .tabla-tutorias {
+        font-size: 11px;
+    }
+
+    .tabla-tutorias thead th {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .celda-foto {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .foto-estudiante {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 6px;
+    }
+
+    .nombre-estudiante {
+        font-size: 11px;
+    }
+
+    .celda-info {
+        padding: 10px;
+    }
+
+    .celda-info p {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .indice-contenidos {
+        padding: 12px;
+    }
+
+    .indice-contenidos h3 {
+        font-size: 16px;
+    }
+
+    .indice-link {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .panel-dinamico {
+        padding: 20px;
     }
 }
