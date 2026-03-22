@@ -85,14 +85,14 @@
     <header class="hero-container">
         <img src="sources/tecnm portada.jpeg" class="hero-img" alt="Portada ITVER">
         <div class="hero-title-overlay">
-            <h1>Doctorado en Ciencias de la Ingeniería</h1>
+            <h1>GRADUATE</h1>
         </div>
 
-        <a href="#" class="btn-flotante-naranja" aria-label="Convocatoria Abierta">
+        <a href="https://www.veracruz.tecnm.mx/index.php/enlaces/articulos/1782-convocatorias-de-posgrados-del-tecnm-veracruz" class="btn-flotante-naranja" aria-label="Convocatoria Abierta">
             Convocatoria Abierta
         </a>
 
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="btn-facebook-sobre-portada" aria-label="Síguenos en Facebook">
+        <a href="https://www.facebook.com/people/Doctorado-en-Ciencias-de-la-Ingenier%C3%ADa-Tecnm-Veracruz/61583583760672/" target="_blank" rel="noopener noreferrer" class="btn-facebook-sobre-portada" aria-label="Síguenos en Facebook">
             <img src="sources/facebook.png" alt="Facebook">
         </a>
     </header>
@@ -100,38 +100,45 @@
     <!-- CONTENIDO PRINCIPAL -->
     <div class="container my-5">
 
-        <!-- TARJETAS DE ACCESO RÁPIDO -->
+        <!-- TARJETAS DE ACCESO RÁPIDO (COMO BOTONES) -->
         <section class="row row-cols-1 row-cols-md-3 g-4 mb-5" aria-label="Acceso rápido">
             <article class="col">
-                <div class="card-replica">
-                    <img src="sources/icon 1.jpg" class="icon-container-replica" alt="">
-                    <div class="content-container-replica">
-                        <h3 class="title-replica">Anuario escolar</h3>
-                        <p class="subtitle-replica">Por cohorte generacional<br>Red de egresados</p>
+                <button type="button" class="card-replica-btn" onclick="cambiarSeccion('tutorias', this)">
+                    <div class="card-replica">
+                        <img src="sources/icon 1.jpg" class="icon-container-replica" alt="">
+                        <div class="content-container-replica">
+                            <h3 class="title-replica">Anuario escolar</h3>
+                            <p class="subtitle-replica">Por cohorte generacional<br>Red de egresados</p>
+                        </div>
                     </div>
-                </div>
+                </button>
             </article>
 
             <article class="col">
-                <div class="card-replica">
-                    <img src="sources/icon 2.jpg" class="icon-container-replica" alt="">
-                    <div class="content-container-replica">
-                        <h3 class="title-replica">Núcleo Académico</h3>
-                        <p class="subtitle-replica">Nuestro equipo de investigadores</p>
+                <button type="button" class="card-replica-btn" onclick="cambiarSeccion('nucleoacademico', this)">
+                    <div class="card-replica">
+                        <img src="sources/icon 2.jpg" class="icon-container-replica" alt="">
+                        <div class="content-container-replica">
+                            <h3 class="title-replica">Núcleo Académico</h3>
+                            <p class="subtitle-replica">Nuestro equipo de investigadores</p>
+                        </div>
                     </div>
-                </div>
+                </button>
             </article>
 
             <article class="col">
-                <div class="card-replica">
-                    <img src="sources/icon 3.jpg" class="icon-container-replica" alt="">
-                    <div class="content-container-replica">
-                        <h3 class="title-replica">Líneas de Investigación</h3>
-                        <p class="subtitle-replica">4 LGAC</p>
+                <button type="button" class="card-replica-btn" onclick="cambiarSeccion('lineas', this)">
+                    <div class="card-replica">
+                        <img src="sources/icon 3.jpg" class="icon-container-replica" alt="">
+                        <div class="content-container-replica">
+                            <h3 class="title-replica">Líneas de Investigación</h3>
+                            <p class="subtitle-replica">4 LGAC</p>
+                        </div>
                     </div>
-                </div>
+                </button>
             </article>
         </section>
+
 
         <!-- MENÚ LATERAL + PANEL DINÁMICO -->
         <section class="row">
@@ -139,19 +146,20 @@
             <aside class="col-md-4 mb-4">
                 <nav class="contenedor-menu-puro" aria-label="Menú de secciones">
                     <button type="button" onclick="cambiarSeccion('contacto', this)" class="enlace-puro">
-                        Contáctanos <span aria-hidden="true">❯</span>
+                        Contáctanos
                     </button>
                     <button type="button" onclick="cambiarSeccion('tesis', this)" class="enlace-puro">
-                        Propuestas de Tesis <span aria-hidden="true">❯</span>
+                        Propuestas de Tesis
                     </button>
                     <button type="button" onclick="cambiarSeccion('instalaciones', this)" class="enlace-puro">
-                        Instalaciones <span aria-hidden="true">❯</span>
+                        Instalaciones
                     </button>
                     <button type="button" onclick="cambiarSeccion('historia', this)" class="enlace-puro">
                         Historia
                     </button>
+
                     <button type="button" onclick="cambiarSeccion('objetivos', this)" class="enlace-puro">
-                        Objetivos <span aria-hidden="true">❯</span>
+                        Objetivos
                     </button>
                     <button type="button" onclick="cambiarSeccion('perfil', this)" class="enlace-puro">
                         Perfil de Egreso
@@ -163,7 +171,7 @@
                         Vinculación
                     </button>
                     <button type="button" onclick="cambiarSeccion('internacional', this)" class="enlace-puro">
-                        Internacional
+                        Internacional <span aria-hidden="true">❯</span>
                     </button>
                     <button type="button" onclick="cambiarSeccion('costos', this)" class="enlace-puro">
                         Costos
@@ -175,16 +183,16 @@
                         Procesos Administrativos
                     </button>
                     <button type="button" onclick="cambiarSeccion('redes', this)" class="enlace-puro">
-                        Redes Sociales <span aria-hidden="true">❯</span>
+                        Redes Sociales
                     </button>
                     <a href="https://rinacional.tecnm.mx/" target="_blank" rel="noopener noreferrer" class="enlace-puro">
-                        Repositorio <span aria-hidden="true">❯</span>
+                        Repositorio
                     </a>
                     <button type="button" onclick="cambiarSeccion('etica', this)" class="enlace-puro">
-                        Protocolos de Ética <span aria-hidden="true">❯</span>
+                        Protocolos de Ética
                     </button>
                     <button type="button" onclick="cambiarSeccion('retribucion', this)" class="enlace-puro">
-                        Retribución Social <span aria-hidden="true">❯</span>
+                        Retribución Social
                     </button>
                 </nav>
             </aside>
