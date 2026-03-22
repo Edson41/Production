@@ -429,7 +429,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Doctorado:</strong> Ciencias Químicas</p>
                                     <p><strong>Distinciones:</strong> SNII (2), PRODEP</p>
                                     <p><strong>Email:</strong> <a href="mailto:alberto.sm@veracruz.tecnm.mx">alberto.sm@veracruz.tecnm.mx</a></p>
-                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="#" target="_blank">https://scholar.google.com.mx/citations?user=wZj7NG4AAAAJ&hl=es</a></p>
+                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com.mx/citations?user=wZj7NG4AAAAJ&hl=es" target="_blank" rel="noopener noreferrer">https://scholar.google.com.mx/citations?user=wZj7NG4AAAAJ&hl=es</a></p>
                                     <p><strong>Curriculum (Perfil RIZOMA):</strong> 203443</p>
                                 </td>
                             </tr>
@@ -444,7 +444,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNII I</p>
                                     <p><strong>Email:</strong> <a href="mailto:cynthia.cs@veracruz.tecnm.mx">cynthia.cs@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> 0000-0002-9079-6748</p>
-                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=oEICInAAAAJ&hl=es" target="_blank">https://scholar.google.com/citations?user=oEICInAAAAJ&hl=es</a></p>
+                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=oEICInAAAAAJ&hl=es" target="_blank" rel="noopener noreferrer">https://scholar.google.com/citations?user=oEICInAAAAAJ&hl=es</a></p>
                                     <p><strong>Curriculum (Perfil RIZOMA):</strong> 347736</p>
                                 </td>
                             </tr>
@@ -460,7 +460,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNII (1)</p>
                                     <p><strong>Email:</strong> <a href="mailto:martin.ho@veracruz.tecnm.mx">martin.ho@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-3740-5736" target="_blank">https://orcid.org/0000-0002-3740-5736</a></p>
-                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=noGcWJAAAAJ&hl=es" target="_blank">https://scholar.google.com/citations?user=noGcWJAAAAJ&hl=es</a></p>
+                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=noGcWjIAAAAJ&hl=es" target="_blank" rel="noopener noreferrer">https://scholar.google.com/citations?user=noGcWjIAAAAJ&hl=es</a></p>
                                     <p><strong>Curriculum (Perfil RIZOMA):</strong> 98343</p>
                                 </td>
                             </tr>
@@ -498,7 +498,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNII (1, Ingenierías), PRODEP</p>
                                     <p><strong>Email:</strong> <a href="mailto:daniel.zo@veracruz.tecnm.mx">daniel.zo@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-9572-4807" target="_blank">https://orcid.org/0000-0002-9572-4807</a></p>
-                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=sVm1WsAAAAJ&hl=es&oi=" target="_blank">https://scholar.google.com/citations?user=sVm1WsAAAAJ&hl=es&oi=</a></p>
+                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=vVtn1WsAAAAJ&hl=es&oi=ao" target="_blank">https://scholar.google.com/citations?user=vVtn1WsAAAAJ&hl=es&oi=ao</a></p>
                                     <p><strong>Curriculum (Perfil RIZOMA):</strong> 547175</p>
                                 </td>
                             </tr>
@@ -514,7 +514,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNII (3, Ingenierías), PRODEP</p>
                                     <p><strong>Email:</strong> <a href="mailto:maria.au@veracruz.tecnm.mx">maria.au@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-3875-7928" target="_blank">https://orcid.org/0000-0002-3875-7928</a></p>
-                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=QtKoPDUAAAJ&hl=es&oi=" target="_blank">https://scholar.google.com/citations?user=QtKoPDUAAAJ&hl=es&oi=</a></p>
+                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=QtKoPDUAAAAJ&hl=es&oi=ao" target="_blank">https://scholar.google.com/citations?user=QtKoPDUAAAAJ&hl=es&oi=ao</a></p>
                                     <p><strong>Curriculum (Perfil RIZOMA):</strong></p>
                                 </td>
                             </tr>
@@ -530,7 +530,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNI (1, Química y Biología)</p>
                                     <p><strong>Email:</strong> <a href="mailto:maria.ir@veracruz.tecnm.mx">maria.ir@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-2301-9105" target="_blank">https://orcid.org/0000-0002-2301-9105</a></p>
-                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=rDYEaiAAAAJ&hl=es&oi=" target="_blank">https://scholar.google.com/citations?user=rDYEaiAAAAJ&hl=es&oi=</a></p>
+                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=rDYEaiAAAAAJ&hl=es&oi=ao" target="_blank">https://scholar.google.com/citations?user=rDYEaiAAAAAJ&hl=es&oi=ao</a></p>
                                     <p><strong>Curriculum (Perfil RIZOMA):</strong> 510832</p>
                                 </td>
                             </tr>
@@ -546,7 +546,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNI (1, Ingenierías)</p>
                                     <p><strong>Email:</strong> <a href="mailto:javier.gr@veracruz.tecnm.mx">javier.gr@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-7411-3003" target="_blank">https://orcid.org/0000-0002-7411-3003</a></p>
-                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=62UnFnkAAAAJ&hl=es" target="_blank">https://scholar.google.com/citations?user=62UnFnkAAAAJ&hl=es</a></p>
+                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=62UnEnkAAAAJ&hl=es" target="_blank">https://scholar.google.com/citations?user=62UnEnkAAAAJ&hl=es</a></p>
                                     <p><strong>Curriculum (Perfil RIZOMA):</strong> 203807</p>
                                 </td>
                             </tr>
@@ -562,7 +562,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNII (1, Biología y Química), PRODEP</p>
                                     <p><strong>Email:</strong> <a href="mailto:olaya.co@veracruz.tecnm.mx">olaya.co@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-3510-2640" target="_blank">https://orcid.org/0000-0003-3510-2640</a></p>
-                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=z5-pDYYAAAAJ&hl=es" target="_blank">https://scholar.google.com/citations?user=z5-pDYYAAAAJ&hl=es</a></p>
+                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=z8-j3XYAAAAJ&hl=es&oi=ao" target="_blank">https://scholar.google.com/citations?user=z8-j3XYAAAAJ&hl=es&oi=ao</a></p>
                                     <p><strong>Curriculum (Perfil RIZOMA):</strong> 105076</p>
                                 </td>
                             </tr>
@@ -586,7 +586,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNII (1, Ingeniería), Prodep</p>
                                     <p><strong>Email:</strong> <a href="mailto:rafael.rl@veracruz.tecnm.mx">rafael.rl@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5254-4195" target="_blank">https://orcid.org/0000-0002-5254-4195</a></p>
-                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=UoFV9LAAAAJ&hl=es" target="_blank">https://scholar.google.com/citations?user=UoFV9LAAAAJ&hl=es</a></p>
+                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com/citations?user=UoFV9LAAAAAJ&hl=es" target="_blank">https://scholar.google.com/citations?user=UoFV9LAAAAAJ&hl=es</a></p>
                                     <p><strong>Curriculum RIZOMA:</strong> 336746</p>
                                 </td>
                             </tr>
@@ -602,7 +602,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNII (1, Ingenierías), PRODEP</p>
                                     <p><strong>Email:</strong> <a href="mailto:abelardo.rl@veracruz.tecnm.mx">abelardo.rl@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-2179-4837" target="_blank">https://orcid.org/0000-0002-2179-4837</a></p>
-                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com.mx/citations?user=OE3Bc8QAAAAJ&hl=es" target="_blank">https://scholar.google.com.mx/citations?user=OE3Bc8QAAAAJ&hl=es</a></p>
+                                    <p><strong>Perfil</strong> <span class="separador-perfil">Google Scholar:</span> <a href="https://scholar.google.com.mx/citations?user=OE3Be8QAAAAJ&hl=es" target="_blank">https://scholar.google.com.mx/citations?user=OE3Be8QAAAAJ&hl=es</a></p>
                                     <p><strong>Curriculum RIZOMA:</strong> 222277</p>
                                 </td>
                             </tr>
@@ -618,7 +618,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNII (1, Ingenierías), PRODEP</p>
                                     <p><strong>Email:</strong> <a href="mailto:francisco.pg@veracruz.tecnm.mx">francisco.pg@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0001-7798-9601" target="_blank">https://orcid.org/0000-0001-7798-9601</a></p>
-                                    <p><strong>Perfil Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=3kTeP7kAAAAJ&hl=es&oi=" target="_blank">https://scholar.google.com/citations?user=3kTeP7kAAAAJ&hl=es&oi=</a></p>
+                                    <p><strong>Perfil Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=3kTePZkAAAAJ&hl=es&oi=ao" target="_blank">https://scholar.google.com/citations?user=3kTePZkAAAAJ&hl=es&oi=ao</a></p>
                                     <p><strong>Curriculum RIZOMA:</strong> 831120</p>
                                 </td>
                             </tr>
@@ -634,7 +634,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNII (1, Ingenierías), PRODEP</p>
                                     <p><strong>Email:</strong> <a href="mailto:guillermo.oc@veracruz.tecnm.mx">guillermo.oc@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-2441-3021" target="_blank">https://orcid.org/0000-0003-2441-3021</a></p>
-                                    <p><strong>Perfil Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=Bh0Z1S4AAAAJ&hl=es&oi=" target="_blank">https://scholar.google.com/citations?user=Bh0Z1S4AAAAJ&hl=es&oi=</a></p>
+                                    <p><strong>Perfil Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=Bh0ZlS4AAAAJ&hl=es&oi=ao" target="_blank">https://scholar.google.com/citations?user=Bh0ZlS4AAAAJ&hl=es&oi=ao</a></p>
                                     <p><strong>Curriculum (Perfil RIZOMA):</strong> 35336</p>
                                 </td>
                             </tr>
@@ -658,7 +658,7 @@ function renderFullPageNucleoAcademico() {
                                     <p><strong>Distinciones:</strong> SNII (3, ingenierías), PRODEP</p>
                                     <p><strong>Email:</strong> <a href="mailto:marco.sc@veracruz.tecnm.mx">marco.sc@veracruz.tecnm.mx</a></p>
                                     <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0001-7284-2053" target="_blank">https://orcid.org/0000-0001-7284-2053</a></p>
-                                    <p><strong>Perfil Google Scholar:</strong> <a href="https://scholar.google.com/citations?hl=es&user=MDbm_ZYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">https://scholar.google.com/citations?hl=es&user=MDbm_ZYAAAAJ&view_op=list_works&sortby=pubdate</a></p>
+                                    <p><strong>Perfil Google Scholar:</strong> <a href="https://scholar.google.com/citations?hl=es&user=MDbm_zYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">https://scholar.google.com/citations?hl=es&user=MDbm_zYAAAAJ&view_op=list_works&sortby=pubdate</a></p>
                                     <p><strong>Curriculum (Perfil RIZOMA):</strong> 306</p>
                                 </td>
                             </tr>
@@ -699,10 +699,8 @@ function renderFullPageNucleoAcademico() {
                 </div>
             </div>
         </div>
-    \`;
-}
-            </div>
-        </div>
+    </div>
+    </div>
     `;
 }
 

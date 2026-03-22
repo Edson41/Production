@@ -44,7 +44,7 @@ body {
 .top-header {
     background-color: var(--gris-claro);
     border-bottom: 1px solid var(--gris-borde);
-    padding: 15px 0;
+    padding: 8px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -55,15 +55,14 @@ body {
     max-width: 1600px;
 }
 
-/* Contenedor Principal - Una sola línea */
+/* Contenedor Principal */
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
-    flex-wrap: nowrap;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-
 
 /* ========================================
    3. MARCA Y LOGOS
@@ -72,15 +71,15 @@ body {
 .brand-container {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
     text-decoration: none;
     color: var(--azul-tecnm);
     flex-shrink: 0;
-    min-width: 0;
+    order: 1;
 }
 
 .logo-principal {
-    height: 100px;
+    height: 70px;
     width: auto;
     flex-shrink: 0;
 }
@@ -91,7 +90,6 @@ body {
     color: var(--azul-tecnm);
     line-height: 1;
     margin: 0;
-    min-width: 0;
 }
 
 .brand-text h2,
@@ -102,30 +100,28 @@ body {
 }
 
 .brand-text .title-top {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 800;
 }
 
 .brand-text .title-mid {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 800;
 }
 
 .brand-text .title-bottom {
-    font-size: 12px;
+    font-size: 10px;
     font-style: italic;
     font-weight: 500;
-    margin-top: 2px;
 }
 
 .logo-secundario {
     height: auto;
-    width: 280px;
+    width: 200px;
     object-fit: contain;
     flex-shrink: 0;
-    margin-left: auto;
+    order: 3;
 }
-
 
 /* ========================================
    4. MENÚ CENTRAL E INDICADOR
@@ -136,15 +132,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    flex: 1;
+    gap: 25px;
     padding: 0;
     margin: 0;
     border: none;
-    height: 80px;
+    height: 60px;
+    order: 2;
+    flex: 0 1 auto;
 }
 
-/* Enlace de Navegación */
 .nav-link-inline {
     display: flex;
     flex-direction: column;
@@ -156,13 +152,10 @@ body {
     z-index: 2;
     border: none;
     background: none;
-    padding: 15px 12px;
-
-    min-width: auto;
-    min-height: auto;
+    padding: 10px 8px;
     position: relative;
     transition: background-color 0.2s;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-family: inherit;
     white-space: nowrap;
 }
@@ -172,28 +165,21 @@ body {
     border-radius: 4px;
 }
 
-.nav-link-inline:focus {
-    outline: 2px solid var(--naranja-convocatoria);
-    outline-offset: 2px;
-}
-
-/* Iconos y Texto en Navegación */
 .nav-link-inline i {
-    font-size: 1.4rem;
-    margin-bottom: 4px;
+    font-size: 1.1rem;
+    margin-bottom: 2px;
     pointer-events: none;
 }
 
 .nav-link-inline span {
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     font-weight: 600;
     pointer-events: none;
-    line-height: 1.1;
+    line-height: 1;
 }
 
-/* Indicador de Selección Animado */
 .nav-indicator {
-    height: 4px;
+    height: 3px;
     background-color: var(--azul-tecnm);
     position: absolute;
     bottom: 0;
@@ -204,17 +190,17 @@ body {
     width: 0;
 }
 
-
 /* ========================================
-   5. SELECTOR DE IDIOMA (HTML Semántico)
+   5. SELECTOR DE IDIOMA
    ======================================== */
 
 .language-selector {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     border: none;
     padding: 0;
     margin: 0;
+    order: 4;
 }
 
 .language-selector input[type="radio"] {
@@ -224,8 +210,8 @@ body {
 .language-selector label.flag-btn {
     padding: 0;
     margin: 0;
-    height: 32px;
-    width: 48px;
+    height: 28px;
+    width: 42px;
     border: 1px solid #ccc;
     border-radius: 2px;
     overflow: hidden;
@@ -245,29 +231,6 @@ body {
     border: 2px solid var(--naranja-convocatoria);
     box-shadow: 0 0 0 2px rgba(209, 122, 27, 0.2);
 }
-
-.language-selector label.flag-btn:hover {
-    opacity: 0.8;
-    border-color: var(--naranja-convocatoria);
-}
-
-.language-selector input[type="radio"]:focus + label {
-    outline: 2px solid var(--naranja-convocatoria);
-    outline-offset: 2px;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-}
-
 
 /* ========================================
    6. HERO / PORTADA
@@ -334,6 +297,18 @@ body {
 .btn-flotante-naranja:focus {
     outline: 2px solid var(--blanco);
     outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+    .btn-flotante-naranja {
+        bottom: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%);
+    }
+
+    .btn-flotante-naranja:hover {
+        transform: translateX(-50%) translateY(50%) scale(1.05);
+    }
 }
 
 /* Botón Facebook Sobre Portada */
@@ -1112,6 +1087,17 @@ body {
     border-radius: 4px;
 }
 
+.footer-credits {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.footer-credits strong {
+    color: #666;
+    font-weight: 600;
+}
 
 /* ========================================
    14. ANIMACIONES
@@ -1152,102 +1138,14 @@ body {
    15. MEDIA QUERIES - RESPONSIVE
    ======================================== */
 
-/* Pantallas Extra Large - 1400px y menor */
-@media (max-width: 1400px) {
-    .menu-central-container {
-        gap: 30px;
-    }
-
-    .logo-secundario {
-        width: 240px;
-    }
-}
+/* ========================================
+   MEDIA QUERIES - RESPONSIVE
+   ======================================== */
 
 /* Pantallas Large - 1199px y menor */
 @media (max-width: 1199px) {
     .header-content {
-        gap: 20px;
-    }
-
-    .brand-text .title-top {
-        font-size: 14px;
-    }
-
-    .brand-text .title-mid {
-        font-size: 16px;
-    }
-
-    .brand-text .title-bottom {
-        font-size: 11px;
-    }
-
-    .menu-central-container {
-        gap: 25px;
-    }
-
-    .nav-link-inline {
-        padding: 12px 10px;
-        font-size: 0.9rem;
-    }
-
-    .nav-link-inline span {
-        font-size: 0.85rem;
-    }
-
-    .nav-link-inline i {
-        font-size: 1.2rem;
-        margin-bottom: 3px;
-    }
-
-    .logo-secundario {
-        width: 200px;
-    }
-
-    .tabla-tutorias {
-        font-size: 13px;
-    }
-
-    .celda-foto {
-        width: 150px;
-        padding: 15px;
-    }
-
-    .foto-estudiante {
-        width: 120px;
-        height: 120px;
-    }
-
-    .celda-info {
-        padding: 15px;
-    }
-
-    .celda-info p {
-        font-size: 13px;
-        margin-bottom: 12px;
-    }
-}
-
-/* Tablets - 768px y menor */
-@media (max-width: 768px) {
-    .top-header {
-        padding: 12px 0;
-    }
-
-    .header-content {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .brand-container {
-        gap: 10px;
-        order: 1;
-        flex-basis: 100%;
-        justify-content: center;
-    }
-
-    .logo-principal {
-        height: 70px;
+        gap: 12px;
     }
 
     .brand-text .title-top {
@@ -1255,119 +1153,7 @@ body {
     }
 
     .brand-text .title-mid {
-        font-size: 14px;
-    }
-
-    .brand-text .title-bottom {
-        font-size: 10px;
-    }
-
-    .menu-central-container {
-        order: 2;
-        gap: 15px;
-        flex-basis: 100%;
-        justify-content: center;
-        height: auto;
-        padding: 10px 0;
-    }
-
-    .nav-link-inline {
-        padding: 10px 8px;
-        font-size: 0.8rem;
-    }
-
-    .nav-link-inline span {
-        font-size: 0.75rem;
-    }
-
-    .nav-link-inline i {
-        font-size: 1rem;
-        margin-bottom: 2px;
-    }
-
-    .language-selector {
-        gap: 6px;
-    }
-
-    .language-selector label.flag-btn {
-        height: 28px;
-        width: 42px;
-    }
-
-    .logo-secundario {
-        width: 120px;
-        order: 3;
-        flex-basis: 100%;
-        margin-left: 0;
-    }
-
-    .tabla-tutorias {
-        font-size: 12px;
-    }
-
-    .tabla-tutorias thead th {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .celda-foto {
-        width: 120px;
-        padding: 12px;
-    }
-
-    .foto-estudiante {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 8px;
-    }
-
-    .nombre-estudiante {
-        font-size: 12px;
-    }
-
-    .celda-info {
-        padding: 12px;
-    }
-
-    .celda-info p {
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-
-    .indice-contenidos {
-        padding: 15px;
-    }
-
-    .indice-link {
-        padding: 6px 10px;
         font-size: 13px;
-    }
-}
-
-/* Móviles - 480px y menor */
-@media (max-width: 480px) {
-    .top-header {
-        padding: 10px 0;
-    }
-
-    .header-content {
-        gap: 10px;
-    }
-
-    .brand-container {
-        gap: 8px;
-    }
-
-    .logo-principal {
-        height: 60px;
-    }
-
-    .brand-text .title-top {
-        font-size: 11px;
-    }
-
-    .brand-text .title-mid {
-        font-size: 12px;
     }
 
     .brand-text .title-bottom {
@@ -1375,21 +1161,88 @@ body {
     }
 
     .menu-central-container {
-        gap: 12px;
+        gap: 20px;
+        height: 55px;
     }
 
     .nav-link-inline {
         padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+
+    .nav-link-inline span {
+        font-size: 0.7rem;
+    }
+
+    .nav-link-inline i {
+        font-size: 1rem;
+    }
+
+    .logo-principal {
+        height: 60px;
+    }
+
+    .logo-secundario {
+        width: 180px;
+    }
+}
+
+/* Tablets - 768px y menor */
+@media (max-width: 768px) {
+    .top-header {
+        padding: 6px 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .brand-container {
+        gap: 6px;
+        order: 1;
+    }
+
+    .logo-principal {
+        height: 45px;
+    }
+
+    .brand-text .title-top {
+        font-size: 10px;
+    }
+
+    .brand-text .title-mid {
+        font-size: 11px;
+    }
+
+    .brand-text .title-bottom {
+        font-size: 8px;
+    }
+
+    .menu-central-container {
+        gap: 12px;
+        height: 45px;
+        order: 2;
+        width: 100%;
+    }
+
+    .nav-link-inline {
+        padding: 6px 4px;
         font-size: 0.7rem;
     }
 
     .nav-link-inline span {
-        font-size: 0.65rem;
+        font-size: 0.6rem;
     }
 
     .nav-link-inline i {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         margin-bottom: 1px;
+    }
+
+    .language-selector {
+        gap: 4px;
+        order: 3;
     }
 
     .language-selector label.flag-btn {
@@ -1398,56 +1251,110 @@ body {
     }
 
     .logo-secundario {
-        width: 100px;
+        width: 120px;
+        order: 4;
+    }
+}
+
+//* Móviles - 576px y menor */
+@media (max-width: 575px) {
+    .top-header {
+        padding: 5px 0;
     }
 
-    .tabla-tutorias {
-        font-size: 11px;
+    .header-content {
+        gap: 6px;
     }
 
-    .tabla-tutorias thead th {
-        padding: 8px;
-        font-size: 12px;
+    .brand-container {
+        gap: 4px;
+        order: 1;
+        width: 100%;
+        justify-content: center;
     }
 
-    .celda-foto {
-        width: 100px;
-        padding: 10px;
+    .logo-principal {
+        height: 38px;
     }
 
-    .foto-estudiante {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 6px;
+    .brand-text .title-top {
+        font-size: 9px;
     }
 
-    .nombre-estudiante {
-        font-size: 11px;
+    .brand-text .title-mid {
+        font-size: 10px;
     }
 
-    .celda-info {
-        padding: 10px;
+    .brand-text .title-bottom {
+        font-size: 7px;
     }
 
-    .celda-info p {
-        font-size: 11px;
-        margin-bottom: 8px;
+    .menu-central-container {
+        gap: 10px;
+        height: auto;
+        order: 2;
+        width: 100%;
+        padding: 6px 0;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .indice-contenidos {
-        padding: 12px;
+    .nav-link-inline {
+        padding: 8px 6px;
+        font-size: 0.6rem;
+        flex: 0 1 auto;
     }
 
-    .indice-contenidos h3 {
-        font-size: 16px;
+    .nav-link-inline span {
+        font-size: 0.5rem;
     }
 
-    .indice-link {
-        padding: 5px 8px;
-        font-size: 12px;
+    .nav-link-inline i {
+        font-size: 0.7rem;
+        margin-bottom: 2px;
     }
 
-    .panel-dinamico {
-        padding: 20px;
+    .language-selector {
+        gap: 3px;
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 4px 0;
+    }
+
+    .language-selector label.flag-btn {
+        height: 20px;
+        width: 30px;
+    }
+
+    .logo-secundario {
+        display: none;
+    }
+}
+
+/* Móviles Extra Small - 360px y menor */
+@media (max-width: 360px) {
+    .menu-central-container {
+        gap: 6px;
+        height: auto;
+    }
+
+    .nav-link-inline {
+        padding: 6px 4px;
+        font-size: 0.55rem;
+    }
+
+    .nav-link-inline span {
+        font-size: 0.45rem;
+    }
+
+    .nav-link-inline i {
+        font-size: 0.65rem;
+        margin-bottom: 1px;
+    }
+
+    .language-selector label.flag-btn {
+        height: 18px;
+        width: 27px;
     }
 }
